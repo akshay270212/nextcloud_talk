@@ -7,7 +7,7 @@ $CONFIG = array (
   array (
     0 => 'localhost:8080',
   ),
-  'datadirectory' => '/Users/haveninfoline/Desktop/php/nextcloud/data',
+  'datadirectory' => '/Users/haveninfoline/Desktop/nextcloud_talk/data',
   'dbtype' => 'mysql',
   'version' => '31.0.8.1',
   'overwrite.cli.url' => 'http://localhost:8080',
@@ -20,4 +20,5 @@ $CONFIG = array (
   'dbpassword' => 'Shindeak51@',
   'installed' => true,
   'maintenance' => false,
+  'htaccess.RewriteBase' => '/',
 );

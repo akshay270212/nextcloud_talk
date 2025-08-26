@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<info xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+    <id>customnav</id>
+    <name>Custom Navigation</name>
+    <summary>Custom navigation items for Project, Task, and MOM</summary>
+    <description>Adds custom navigation entries to the Nextcloud header menu</description>
+    <version>1.0.0</version>
+    <licence>agpl</licence>
+    <author mail="admin@example.com" homepage="">Custom Nav</author>
+    <namespace>CustomNav</namespace>
+    <category>tools</category>
+    <bugs>https://github.com/example/customnav</bugs>
+    
+    <dependencies>
+        <nextcloud min-version="25" max-version="31"/>
+    </dependencies>
+    
+    <navigations>
+        <navigation>
+            <name>Project</name>
+            <route>customnav.page.project</route>
+            <order>4</order>
+        </navigation>
+        <navigation>
+            <name>Task</name>
+            <route>customnav.page.task</route>
+            <order>5</order>
+        </navigation>
+        <navigation>
+            <name>MOM</name>
+            <route>customnav.page.mom</route>
+            <order>6</order>
+        </navigation>
+    </navigations>
+    
+    <routes>
+        <route>
+            <name>page#project</name>
+            <url>/project</url>
+            <verb>GET</verb>
+        </route>
+        <route>
+            <name>page#task</name>
+            <url>/task</url>
+            <verb>GET</verb>
+        </route>
+        <route>
+            <name>page#mom</name>
+            <url>/mom</url>
+            <verb>GET</verb>
+        </route>
+    </routes>
+</info>
